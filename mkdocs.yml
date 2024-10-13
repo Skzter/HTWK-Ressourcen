@@ -1,0 +1,9 @@
+site_name: Playbook
+theme: readthedocs
+color_mode: dark
+extra_css: 
+  - extra.css
+nav: 
+ - Playbook: index.md
+ - Weitere Informationen: infos.md
+ - Technik-Tutorials: tutorials.md
