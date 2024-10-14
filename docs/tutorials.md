@@ -1,8 +1,8 @@
-# WLAN und VPN Anleitungen
+# Anleitungen für Dienste der HTWK Leipzig
+
+Da manche Anleitungen auf der Seite des ITSZ veraltet sind bzw. für Linux vielleicht nicht funktionieren, gibt es hier aktuelle Anleitungen. Primär handelt es sich dabei um das WLAN (Eduroam) und den VPN. Für die Einrichtung wird eine Internetverbindung vorausgesetzt, um das Zertifikat zu installieren.
 
 ## Einrichtung Eduroam für Androidgeräte
-
-Für die Einrichtung wird eine Internetverbindung vorausgesetzt, um das Zertifikat zu installieren.
 
 ### Zertifikat installieren
 
@@ -16,7 +16,8 @@ WLAN-Einstellungen -> Drei Punkte oben rechts -> Erweiterte Einstellungen -> Zer
 
 ### Mit Eduroam verbinden
 
-   - Eduroam auswählen
+Wählen Sie Eduroam aus und geben Sie folgende erweiterten Einstellungen ein:  
+
    - EAP-Methode: PEAP
    - Phase-2-Authentifizierung: MS-CHAP v2
    - CA-Zertifikat: Zertifikat mit vorher festgelegtem Namen auswählen
@@ -28,4 +29,20 @@ WLAN-Einstellungen -> Drei Punkte oben rechts -> Erweiterte Einstellungen -> Zer
    - Passwort: **HTWK-Passwort**
    - Verbinden drücken  
 
-   - Es funktioniert (hoffentlich).
+Es funktioniert (hoffentlich).
+
+## Einrichtung Eduroam für iOS/iPadOS/MacOS/Windows
+
+Die Anleitungen dafür sind noch aktuell. Um zu den Anleitungen zu gelangen bitte auf das zutreffende Betriebssystem klicken.  
+
+[iOS](tbd)  
+[iPadOS](tbd)  
+[MacOS](tbd)  
+[Windows](tbd)  
+
+## Einrichtung Eduraom für Linux
+
+Hierfür gibt es zwei Möglichkeiten. Zum einen kann man den [Installer](tbd) herunterladen und ausführen. Sollte dieser nicht funktionieren, da er Fehler auswirft, kann man die Daten auch per Hand eintragen. In der Anleitung wird dafür das Tool `nmtui` benutzt. Das ist das Terminal User Interface des NetworkManagers. Dazu gibt es [hier](tbd) weitere Informationen.  
+
+
+
