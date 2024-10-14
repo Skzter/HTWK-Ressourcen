@@ -59,6 +59,14 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#einrichtung-eduroam-fur-iosipadosmacoswindows">Einrichtung Eduroam für iOS/iPadOS/MacOS/Windows</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#einrichtung-eduraom-fur-linux">Einrichtung Eduraom für Linux</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#anleitung-sofern-installer-nicht-funktioniert">Anleitung sofern Installer nicht funktioniert</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -85,9 +93,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="wlan-und-vpn-anleitungen">WLAN und VPN Anleitungen</h1>
+                <h1 id="anleitungen-fur-dienste-der-htwk-leipzig">Anleitungen für Dienste der HTWK Leipzig</h1>
+<p>Da manche Anleitungen auf der Seite des ITSZ veraltet sind bzw. für Linux vielleicht nicht funktionieren, gibt es hier aktuelle Anleitungen. Primär handelt es sich dabei um das WLAN (Eduroam) und den VPN. Für die Einrichtung wird eine Internetverbindung vorausgesetzt, um das Zertifikat zu installieren.</p>
 <h2 id="einrichtung-eduroam-fur-androidgerate">Einrichtung Eduroam für Androidgeräte</h2>
-<p>Für die Einrichtung wird eine Internetverbindung vorausgesetzt, um das Zertifikat zu installieren.</p>
 <h3 id="zertifikat-installieren">Zertifikat installieren</h3>
 <p>Zuerst laden Sie das <a href="../T-TeleSec_GlobalRoot_Class_2.crt">Zertifikat</a> runter und installieren es. </p>
 <p><strong>Android 14</strong>:<br />
@@ -95,8 +103,8 @@ WLAN-Einstellungen -&gt; Zertifikat installieren -&gt; T-TeleSec... Zertifikat a
 <p><strong>Android 13</strong>:<br />
 WLAN-Einstellungen -&gt; Drei Punkte oben rechts -&gt; Erweiterte Einstellungen -&gt; Zertifikat hinzufügen -&gt;  T-TeleSec... Zertifikat auswählen und Namen vergeben.</p>
 <h3 id="mit-eduroam-verbinden">Mit Eduroam verbinden</h3>
+<p>Wählen Sie Eduroam aus und geben Sie folgende erweiterten Einstellungen ein:  </p>
 <ul>
-<li>Eduroam auswählen</li>
 <li>EAP-Methode: PEAP</li>
 <li>Phase-2-Authentifizierung: MS-CHAP v2</li>
 <li>CA-Zertifikat: Zertifikat mit vorher festgelegtem Namen auswählen</li>
@@ -106,13 +114,26 @@ WLAN-Einstellungen -&gt; Drei Punkte oben rechts -&gt; Erweiterte Einstellungen 
 <li>Identität: <strong>HTWK-Login</strong>@htwk-leipzig.de</li>
 <li>Anonyme Identität: eduroam@htwk-leipzig.de</li>
 <li>Passwort: <strong>HTWK-Passwort</strong></li>
-<li>
-<p>Verbinden drücken  </p>
-</li>
-<li>
-<p>Es funktioniert (hoffentlich).</p>
-</li>
+<li>Verbinden drücken  </li>
 </ul>
+<p>Es funktioniert (hoffentlich).</p>
+<h2 id="einrichtung-eduroam-fur-iosipadosmacoswindows">Einrichtung Eduroam für iOS/iPadOS/MacOS/Windows</h2>
+<p>Die Anleitungen dafür sind noch aktuell. Um zu den Anleitungen zu gelangen bitte auf das zutreffende Betriebssystem klicken.  </p>
+<p><a href="https://itsz.htwk-leipzig.de/dienste/wlan/einrichtung-unter-macos/einrichtung-unter-ios-ipad/einrichtung-auf-dem-iphone">iOS</a>
+<a href="https://itsz.htwk-leipzig.de/dienste/wlan/einrichtung-unter-macos/einrichtung-unter-ios-ipad">iPadOS</a><br />
+<a href="https://itsz.htwk-leipzig.de/dienste/wlan/einrichtung-unter-macos/einrichtung-unter-ios-ipad/einrichtung-auf-dem-iphone/einrichtung-unter-macos">MacOS</a><br />
+<a href="https://itsz.htwk-leipzig.de/dienste/wlan/einrichtung-unter-windows">Windows</a> </p>
+<h2 id="einrichtung-eduraom-fur-linux">Einrichtung Eduraom für Linux</h2>
+<p>Hierfür gibt es zwei Möglichkeiten. Zum einen kann man den <a href="https://cat.eduroam.org/?idp=5142">Installer</a> herunterladen und der <a href="https://itsz.htwk-leipzig.de/dienste/wlan/einrichtung-unter-linux">Anleitung</a> folgen. Sollte dieser nicht funktionieren, da er Fehler auswirft, kann man die Daten auch per Hand eintragen. In der Anleitung wird dafür das Tool <code>nmtui</code> benutzt. Das ist das Terminal User Interface des <a href="https://wiki.archlinux.org/title/NetworkManager">NetworkManagers</a>. </p>
+<h3 id="anleitung-sofern-installer-nicht-funktioniert">Anleitung sofern Installer nicht funktioniert</h3>
+<ol>
+<li><a href="tbd">Zertifikat</a> herunterladen</li>
+<li><code>nmtui</code> im Terminal öffnen</li>
+<li><em>Eine Verbindung bearbeiten</em> wählen und <strong>Eduroam</strong> auswählen</li>
+<li>Folgendes eintrage:</li>
+<li>ad</li>
+</ol>
+<p>Es funktioniert (hoffentlich).</p>
               
             </div>
           </div><footer>

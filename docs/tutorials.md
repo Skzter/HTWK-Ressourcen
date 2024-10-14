@@ -35,14 +35,21 @@ Es funktioniert (hoffentlich).
 
 Die Anleitungen dafür sind noch aktuell. Um zu den Anleitungen zu gelangen bitte auf das zutreffende Betriebssystem klicken.  
 
-[iOS](tbd)  
-[iPadOS](tbd)  
-[MacOS](tbd)  
-[Windows](tbd)  
+[iOS](https://itsz.htwk-leipzig.de/dienste/wlan/einrichtung-unter-macos/einrichtung-unter-ios-ipad/einrichtung-auf-dem-iphone)
+[iPadOS](https://itsz.htwk-leipzig.de/dienste/wlan/einrichtung-unter-macos/einrichtung-unter-ios-ipad)  
+[MacOS](https://itsz.htwk-leipzig.de/dienste/wlan/einrichtung-unter-macos/einrichtung-unter-ios-ipad/einrichtung-auf-dem-iphone/einrichtung-unter-macos)  
+[Windows](https://itsz.htwk-leipzig.de/dienste/wlan/einrichtung-unter-windows) 
 
 ## Einrichtung Eduraom für Linux
 
-Hierfür gibt es zwei Möglichkeiten. Zum einen kann man den [Installer](tbd) herunterladen und ausführen. Sollte dieser nicht funktionieren, da er Fehler auswirft, kann man die Daten auch per Hand eintragen. In der Anleitung wird dafür das Tool `nmtui` benutzt. Das ist das Terminal User Interface des NetworkManagers. Dazu gibt es [hier](tbd) weitere Informationen.  
+Hierfür gibt es zwei Möglichkeiten. Zum einen kann man den [Installer](https://cat.eduroam.org/?idp=5142) herunterladen und der [Anleitung](https://itsz.htwk-leipzig.de/dienste/wlan/einrichtung-unter-linux) folgen. Sollte dieser nicht funktionieren, da er Fehler auswirft, kann man die Daten auch per Hand eintragen. In der Anleitung wird dafür das Tool `nmtui` benutzt. Das ist das Terminal User Interface des [NetworkManagers](https://wiki.archlinux.org/title/NetworkManager). 
 
+### Anleitung sofern Installer nicht funktioniert
 
+1. [Zertifikat](tbd) herunterladen
+2. `nmtui` im Terminal öffnen
+3. *Eine Verbindung bearbeiten* wählen und **Eduroam** auswählen
+4. Folgendes eintrage:
+   - ad
 
+Es funktioniert (hoffentlich).
