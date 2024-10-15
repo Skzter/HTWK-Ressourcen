@@ -48,11 +48,11 @@ Hierfür gibt es zwei Möglichkeiten. Zum einen kann man den [Installer](https:/
 
 1. [Zertifikat](T-TeleSec_GlobalRoot_Class_2.crt) herunterladen
 2. `nmtui` im Terminal öffnen
-    ![nmtui Auswahl](/pictures/nmtui1.png)
+    ![nmtui Auswahl](pictures/nmtui1.png)
 3. *Eine Verbindung bearbeiten* wählen und **Eduroam** auswählen
-    ![nmtui gui](/pictures/nmtui2.png)
+    ![nmtui gui](pictures/nmtui2.png)
 4. Folgendes eintragen:
-    ![nmtui Eduroam Einstellungen](/pictures/nmtui3.png)
+    ![nmtui Eduroam Einstellungen](pictures/nmtui3.png)
 5. Einstellungen speichern. Das Gerät sollte sich eigenständig mit Eduraom verbinden.
 
 Es funktioniert (hoffentlich).
