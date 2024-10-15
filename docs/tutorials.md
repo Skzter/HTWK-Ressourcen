@@ -46,10 +46,36 @@ Hierfür gibt es zwei Möglichkeiten. Zum einen kann man den [Installer](https:/
 
 ### Anleitung sofern Installer nicht funktioniert
 
-1. [Zertifikat](tbd) herunterladen
+1. [Zertifikat](T-TeleSec_GlobalRoot_Class_2.crt) herunterladen
 2. `nmtui` im Terminal öffnen
+    ![nmtui Auswahl](/pictures/nmtui1.png)
 3. *Eine Verbindung bearbeiten* wählen und **Eduroam** auswählen
-4. Folgendes eintrage:
-   - ad
+    ![nmtui gui](/pictures/nmtui2.png)
+4. Folgendes eintragen:
+    ![nmtui Eduroam Einstellungen](/pictures/nmtui3.png)
+5. Einstellungen speichern. Das Gerät sollte sich eigenständig mit Eduraom verbinden.
 
 Es funktioniert (hoffentlich).
+
+## Einrichtung VPN für Android-/iOS-/Windows-/Linuxgeräte
+
+**Wichtiger Hinweis**
+
+Beim erstmaligen Herstellen einer Verbindung (oder bei neuem Zertifikat auf dem VPN Server) wird Ihnen ein Fingerprint angezeigt (nicht in vorkonfigurierten Installationspaketen für Windows). Bitte überprüfen Sie diesen.  
+Windows: Der korrekte "Fingerprint" lautet: "SEEK TWIN VINE EDNA SELF AREA ABET CUB BOWL BECK SAIL DEFT"  
+Linux und MacOS: Der korrekte "Root CA fingerprint" lautet: "NEAR FEE GASH SHOT THY THAT ATOM NINE SEEK OBEY LIEN BLOW"
+
+### Anleitung für Android-/iOS-/Windowsgeräte
+
+Für die Einrichtung des VPNs dürfen Sie nicht mit dem Hochschulnetz (Eduroam) verbunden sein. Anleitungen sind hier zu finden:  
+[Android](https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/android-chromeos)  
+[iOS](https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/ios)  
+[Windows](https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/windows-10) *Anmelden* auf der Seite, um den Client herunterzuladen.  
+
+## Einrichtung für Linux
+
+Es gibt eine [Anleitung](https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/linux) (*Anmelden* für Client) auf der Seite des ITSZ, wenn diese nicht funktioniert, gibt es hier eine alternative Anleitung.
+
+### Anleitung für Linux
+
+kommt noch

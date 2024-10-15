@@ -4,3 +4,4 @@
 - [Übersicht](https://imweb.imn.htwk-leipzig.de/studienamtinf/) vom Studienamt (*CSS manchmal broken aber geht trotzdem*)
 - [Digitales Lernen](https://imweb.imn.htwk-leipzig.de/stolze/) von Herr Stolze
 - [PDFs](https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/18446942215/CourseNode/1695090474264326012) zu weiteren Inhalten der Hochschule
+- [HTWK-Instagram](https://www.instagram.com/htwkleipzig), [FSR-IM-Instagram](https://www.instagram.com/fsr_informatik_medien), [StuRa-Instagram](https://www.instagram.com/stura.htwk)
