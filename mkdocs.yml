@@ -1,6 +1,5 @@
 site_name: Playbook
 theme: readthedocs
-color_mode: dark
 extra_css: 
   - extra.css
 nav: 

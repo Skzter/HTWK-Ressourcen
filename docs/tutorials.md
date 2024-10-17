@@ -72,10 +72,44 @@ Für die Einrichtung des VPNs dürfen Sie nicht mit dem Hochschulnetz (Eduroam) 
 [iOS](https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/ios)  
 [Windows](https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/windows-10) *Anmelden* auf der Seite, um den Client herunterzuladen.  
 
-## Einrichtung für Linux
+## Einrichtung VPN für Linux
 
 Es gibt eine [Anleitung](https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/linux) (*Anmelden* für Client) auf der Seite des ITSZ, wenn diese nicht funktioniert, gibt es hier eine alternative Anleitung.
 
 ### Anleitung für Linux
 
-kommt noch
+Es gibt Anleitungen für Ubuntu/Debian/OpenSuse/Fedora gibt es [hier](https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/linux). Diese Anleitung bezieht sich spezifisch auf Arch Linux, jedoch sind die Schritte bei jedem Distro gleich.
+Zuerst müssen die Dependencies installiert werden:
+
+- lib32-libstdc++5
+- lib32-libx11
+- lib32-pam
+
+**lib32-libstdc++5** *(AUR)*   
+`git clone https://aur.archlinux.org/lib32-libstdc++5.git`    
+`cd lib32-libstdc++5`  
+`makepkg -si`
+
+
+**lib32-libx11** und **lib32-pam** kommen aus dem [Multilib Repo](https://wiki.archlinux.org/title/Official_repositories#multilib).  
+Dafür muss in der Pacman-Config das multilib repo enabled werden.  
+`sudo vim /etc/pacman.conf`  
+Dann muss die Zeile mit  `[multilib]` und `Include = ... ` einkommentiert werden.  
+`sudo pacman -Syu`  
+`sudo pacman -S lib32-pam lib32-libx11`  
+
+**Installation VPN**  
+Jetzt wird der VPN in den `.config` Ordner installiert. Davor muss noch der [Installer](snx_install_linux30.sh) heruntergeladen werden.  
+`cd ~/.config/`  
+`git clone https://aur.archlinux.org/snx.git`  
+`cd snx`  
+`makepkg -si`  
+`mv ~/Downloads/snx_install_linux30.sh ~/.config/snx`  
+`chmod +x snx_install_linux30.sh`  
+`sudo ./snx_install_linux30.sh`  
+
+**Starten**  
+`snx -s vpn.htwk-leipzig.de -u [HTWK-Login]`  
+
+**Stoppen**  
+`snx -d`

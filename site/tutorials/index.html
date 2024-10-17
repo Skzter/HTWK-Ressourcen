@@ -73,7 +73,7 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#einrichtung-fur-linux">Einrichtung für Linux</a>
+    <li class="toctree-l2"><a class="reference internal" href="#einrichtung-vpn-fur-linux">Einrichtung VPN für Linux</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#anleitung-fur-linux">Anleitung für Linux</a>
     </li>
@@ -159,10 +159,39 @@ Linux und MacOS: Der korrekte "Root CA fingerprint" lautet: "NEAR FEE GASH SHOT 
 <a href="https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/android-chromeos">Android</a><br />
 <a href="https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/ios">iOS</a><br />
 <a href="https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/windows-10">Windows</a> <em>Anmelden</em> auf der Seite, um den Client herunterzuladen.  </p>
-<h2 id="einrichtung-fur-linux">Einrichtung für Linux</h2>
+<h2 id="einrichtung-vpn-fur-linux">Einrichtung VPN für Linux</h2>
 <p>Es gibt eine <a href="https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/linux">Anleitung</a> (<em>Anmelden</em> für Client) auf der Seite des ITSZ, wenn diese nicht funktioniert, gibt es hier eine alternative Anleitung.</p>
 <h3 id="anleitung-fur-linux">Anleitung für Linux</h3>
-<p>kommt noch</p>
+<p>Es gibt Anleitungen für Ubuntu/Debian/OpenSuse/Fedora gibt es <a href="https://itsz.htwk-leipzig.de/dienste/vpn-zugriff-auf-das-hochschulnetz/linux">hier</a>. Diese Anleitung bezieht sich spezifisch auf Arch Linux, jedoch sind die Schritte bei jedem Distro gleich.
+Zuerst müssen die Dependencies installiert werden:</p>
+<ul>
+<li>lib32-libstdc++5</li>
+<li>lib32-libx11</li>
+<li>lib32-pam</li>
+</ul>
+<p><strong>lib32-libstdc++5</strong> <em>(AUR)</em> <br />
+<code>git clone https://aur.archlinux.org/lib32-libstdc++5.git</code>  <br />
+<code>cd lib32-libstdc++5</code><br />
+<code>makepkg -si</code></p>
+<p><strong>lib32-libx11</strong> und <strong>lib32-pam</strong> kommen aus dem <a href="https://wiki.archlinux.org/title/Official_repositories#multilib">Multilib Repo</a>.<br />
+Dafür muss in der Pacman-Config das multilib repo enabled werden.<br />
+<code>sudo vim /etc/pacman.conf</code><br />
+Dann muss die Zeile mit  <code>[multilib]</code> und <code>Include = ...</code> einkommentiert werden.<br />
+<code>sudo pacman -Syu</code><br />
+<code>sudo pacman -S lib32-pam lib32-libx11</code>  </p>
+<p><strong>Installation VPN</strong><br />
+Jetzt wird der VPN in den <code>.config</code> Ordner installiert. Davor muss noch der <a href="../snx_install_linux30.sh">Installer</a> heruntergeladen werden.<br />
+<code>cd ~/.config/</code><br />
+<code>git clone https://aur.archlinux.org/snx.git</code><br />
+<code>cd snx</code><br />
+<code>makepkg -si</code><br />
+<code>mv ~/Downloads/snx_install_linux30.sh ~/.config/snx</code><br />
+<code>chmod +x snx_install_linux30.sh</code><br />
+<code>sudo ./snx_install_linux30.sh</code>  </p>
+<p><strong>Starten</strong><br />
+<code>snx -s vpn.htwk-leipzig.de -u [HTWK-Login]</code>  </p>
+<p><strong>Stoppen</strong><br />
+<code>snx -d</code></p>
               
             </div>
           </div><footer>
