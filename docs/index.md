@@ -30,4 +30,4 @@ In Digitaltechnik müssen die Informatiker (Medieninformatik vllt) zwei bis drei
 
 ## Multimedia-Grundkurs 
 
-In Multimedia-Grundkurs müssen die Medieninformatiker vier bis fünf Übungen sowie ein Projekt als PVL erbringen um zugelassen zu werden. Dazu gibt es im Opalkurs den Baustein [Prüfungsvorleistung MIB](https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/39739785217/CourseNode/1723084100173690012).
+Die PVL im MMGK beinhaltet 4 ONYX-Aufgaben, die automatisiert ausgewertet werden, in denen man 50% korrekt zum Bestehen benötigt und ein Projekt. Dazu gibt es im Opalkurs den Baustein [Prüfungsvorleistung MIB](https://bildungsportal.sachsen.de/opal/auth/RepositoryEntry/39739785217/CourseNode/1723084100173690012).
